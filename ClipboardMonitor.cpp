@@ -3,14 +3,15 @@
 #include <filesystem>
 #include <string>
 #include <windows.h>
-#include <ShlObj.h> // For handling file paths
-#include <thread>
-#include <atomic>
+#include <ShlObj.h> // For handling file paths,retrieve the path for folders such as Documents
+#include <thread> //background tasks, clipboard monitoring without interrupting main projgram
+#include <atomic> //a flag to start or stop the clipboard monitoring process
 
-const std::wstring ROOT_FOLDER = L"C:\\Users\\priya\\Desktop\\projects\\clipboardCopyPaste\\root";
+const std::wstring ROOT_FOLDER = L"C:\\Users\\priya\\Desktop\\projects\\clipboardCopyPaste\\root"; //where we want restriction, wide string data type must
+
 const wchar_t *filePath = L"example.txt";
 
-std::atomic<bool> monitoringActive(true); // Flag to control monitoring
+std::atomic<bool> monitoringActive(true); // chatgpt suggestion :( Flag to control monitoring 
 
 ClipboardMonitor::ClipboardMonitor(HWND hwnd) : hwnd(hwnd) {}
 
