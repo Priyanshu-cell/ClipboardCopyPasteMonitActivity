@@ -4,11 +4,12 @@
     {
       "type": "cppbuild",
       "label": "C/C++: g++.exe build active file",
-      "command": "C:\\MinGW\\bin\\g++.exe",
+      "command": "C:/msys64/ucrt64/bin/g++.exe",
       "args": [
         "-fdiagnostics-color=always",
         "-g",
         "-DUNICODE",
+        "-std=c++11",
         "${file}",
         "C:\\Users\\priya\\Desktop\\projects\\clipboardCopyPaste\\ClipboardMonitor.cpp",
         "-o",

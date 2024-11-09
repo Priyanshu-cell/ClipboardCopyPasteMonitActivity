@@ -8,6 +8,7 @@ public:
   void StartMonitoring();
   void StopMonitoring();
   void HandleClipboardUpdate();
+  void WatchRootFolder();
 
 private:
   HWND hwnd; // Window handle for the clipboard viewer

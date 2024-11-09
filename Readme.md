@@ -38,10 +38,11 @@ Here’s the recommended folder structure:
 
 #### `ClipboardMonitor.h` - Class Declaration
 Define a class `ClipboardMonitor` that will handle clipboard events and restrict file copying actions.
-It contains a class name **ClipboardMonitor** with 3 public member function,
+It contains a class name **ClipboardMonitor** with 4 public member function,
 1. StartMonitoring();
 2. StopMonitoring();
 3. HandleClipboardUpdate();
+4. WatchRootFolder();
    
 with a constructor **ClipboardMonitor(HWND hwnd)**;
 
