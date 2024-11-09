@@ -70,4 +70,3 @@ Prevent pasting files from outside the root folder, as described.
 
 ---
 
-## Institution 
